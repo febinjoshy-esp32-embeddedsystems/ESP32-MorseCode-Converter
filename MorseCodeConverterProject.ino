@@ -2,8 +2,8 @@
 #include <WebServer.h>
 #include<LiquidCrystal_I2C.h>
 #include<Wire.h>
-const char* ssid = "Keralavision-Wifi-2.4G";
-const char* password = "P@ssword@123";
+const char* ssid = "YourWiFiName";//add your local Wi-Fi name
+const char* password = "YourPassword";//add your Wi-Fi password
 
 WebServer server(80);
 LiquidCrystal_I2C lcd(0x27,16,2);
