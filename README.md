@@ -1,2 +1,26 @@
 # ESP32-MorseCode-Converter
-This project implements a wireless Morse code converter using an ESP32 . The ESP32 runs a  HTTP web server that hosts a webpage accessible over the local Wi-Fi network. Users can send messages to the web interface from any device connected to the same Wi-Fi and the corresponding Morse code will be displayed on the LCD with audio and visual effects.
+
+A wireless Morse code converter built with ESP32. The ESP32 hosts a local HTTP web server, allowing any device on the same Wi-Fi network to send text messages via a web interface. The message is converted to Morse code and displayed on an LCD, with optional audio beeps and LED visual effects.
+
+## How it works
+1. **Web Server**: ESP32 runs an HTTP server and serves a simple HTML form at its local IP address.
+2. **Input**: Users enter text on the webpage from a phone, laptop, or PC on the same Wi-Fi.
+3. **Conversion**: ESP32 converts the text to International Morse code.
+4. **Output**: The Morse code is shown on an I2C LCD, with synchronized buzzer tones and LED blinks for audio/visual feedback.
+
+## Features
+- No external hosting needed - ESP32 acts as a standalone web server
+- Real-time conversion and display
+- Works with any device that has a browser
+- Low-cost, easy to build with common ESP32 dev boards and I2C LCDs
+
+## Hardware Used
+- ESP32 DevKit v1
+- 16x2 or 20x4 I2C LCD
+- Buzzer 
+- LED 
+
+## Tech Stack
+- Arduino framework / ESP-IDF
+- WiFi.h, WebServer.h
+- LiquidCrystal_I2C library
