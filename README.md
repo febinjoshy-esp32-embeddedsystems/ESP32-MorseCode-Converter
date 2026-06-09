@@ -32,14 +32,18 @@ A wireless Morse code converter built with ESP32. The ESP32 hosts a local HTTP w
 
 ## Project Images
 
+### Circuit Diagram
 ![Circuit Diagram](CircuitDiagram.png)
 *Circuit Diagram of the above project*
 
+### Hardware Setup
 ![Hardware Setup](mchardware.jpg)
 *Image showing actual Esp32 board and wiring on breadboard*
 
+### Live Working
 ![Live Image](mcsetup.jpg)
 *Image shows the working of the project*
 
+### Web Page Image
 ![Image of Web Page](webpage.jpg)
 *Image shows the Web Page hosted by Esp32 to send text messages*
