@@ -30,7 +30,7 @@ A wireless Morse code converter built with ESP32. The ESP32 hosts a local HTTP w
 
 ##Project Images
 
-![Circuit Diagram](CircuitDiagram.jpg)
+![Circuit Diagram](CircuitDiagram.png)
 *Circuit Diagram of the above project*
 
 ![Hardware Setup](mchardware.jpg)
