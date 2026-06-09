@@ -27,3 +27,17 @@ A wireless Morse code converter built with ESP32. The ESP32 hosts a local HTTP w
 
 ## Demonstration Video
 [Click here to watch the demo video](https://drive.google.com/file/d/1D2UA1zOg4r4e_ophEM-e1r0I_9Zj-bEU/view?usp=sharing)
+
+##Project Images
+
+![Circuit Diagram](morse_code_circuit(4).jpg)
+*Circuit Diagram of the above project*
+
+![Hardware Setup](mchardware.jpg)
+*Image showing actual Esp32 board and wiring on breadboard*
+
+![Live Image](mcsetup.jpg)
+*Image shows the working of the project*
+
+![Image of Web Page](webpage.jpg)
+*Image shows the Web Page hosted by Esp32 to send text messages *
