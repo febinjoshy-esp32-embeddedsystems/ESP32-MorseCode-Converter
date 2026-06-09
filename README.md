@@ -40,4 +40,4 @@ A wireless Morse code converter built with ESP32. The ESP32 hosts a local HTTP w
 *Image shows the working of the project*
 
 ![Image of Web Page](webpage.jpg)
-*Image shows the Web Page hosted by Esp32 to send text messages *
+*Image shows the Web Page hosted by Esp32 to send text messages*
