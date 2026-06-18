@@ -22,7 +22,7 @@ struct morse Morse[26]={
   {'X',"-..-"},{'Y',"-.--"},{'Z',"--.."}
 };//Morse code for each alphabet
 bool check=false;
-static int l=0;
+static int limit=0;
 const int dot=100;
 const int dash=300;
 const int gap=300;
@@ -57,14 +57,14 @@ void pause(int value){
   while(millis()-current<value){}
 }
 void blinkMorse(char symbol){
-  if(l>=16&&check){
+  if(limit>=16&&check){
     lcd.setCursor(0,1);
     check=false;
   }
-  if(l>32){
+  if(limit>32){
     lcd.clear();
     lcd.setCursor(0,0);
-    l=0;
+    limit=0;
     check=true;
   }
   if(symbol=='.'){
@@ -120,7 +120,7 @@ void loop() {
   msg=receivedMessage;
   if(msg!=last){
     flag=true;
-    l=0;
+    limit=0;
     check=true;
     lcd.clear();
     lcd.setCursor(0,0);
@@ -133,7 +133,7 @@ void loop() {
         findMorse(msg[i]);
         Serial.print(" ");
         lcd.print(" ");
-        l++;
+        limit++;
       }
       pause(lettergap);
     }
